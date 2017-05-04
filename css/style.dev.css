@@ -6568,6 +6568,7 @@ ul li {
 }
 .terms {
   padding-top: 58px;
+  font-size: 12px;
 }
 .slick-dots {
   bottom: -57px !important;
@@ -6579,6 +6580,8 @@ ul li {
 }
 .slick-dots li {
   border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   width: 13px !important;
   height: 13px !important;
   background-color: #bdbcb6;
@@ -6589,6 +6592,7 @@ ul li {
   background: -o-linear-gradient(90deg, #166eac 0%, #2c9dec 100%);
   background: -ms-linear-gradient(90deg, #166eac 0%, #2c9dec 100%);
   background: linear-gradient(0deg, #166eac 0%, #2c9dec 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#166eac', endColorstr='#2c9dec');
 }
 a,
 button,

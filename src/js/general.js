@@ -1,5 +1,4 @@
 (function($,sr){
-
     // debouncing function from John Hann
     // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
     var debounce = function (func, threshold, execAsap) {
@@ -37,7 +36,10 @@
         screen_md_max = screen_lg_min - 1;
 
     $(document).ready(function () {
-
+        webshims.setOptions('forms', {
+            lazyCustomMessages: true
+        });
+        webshims.polyfill('forms');
             $('.slider').slick({
                 autoplay : true,
                 dots: true,

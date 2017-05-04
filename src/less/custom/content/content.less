@@ -15,7 +15,6 @@
     @media (max-width: @screen-md-max) {
       margin-left: -90%;
     }
-
   }
   .left-text-section {
     width: 396px;
@@ -63,7 +62,6 @@
     padding-left: 22px;
   }
   ul.pull-left, ul.pull-right {
-
     list-style: none;
     li {
       position: relative;
@@ -78,9 +76,7 @@
         position: absolute;
       }
     }
-
   }
-
 }
 
 ul {
@@ -91,6 +87,7 @@ ul {
 
 .terms {
   padding-top: 58px;
+  font-size: 12px;
 }
 
 .slick-dots {
@@ -100,6 +97,8 @@ ul {
   }
   li {
     border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     width: 13px !important;
     height: 13px !important;
     background-color: rgb(189, 188, 182);
@@ -109,10 +108,10 @@ ul {
       background: -o-linear-gradient(90deg, #166eac 0%, #2c9dec 100%);
       background: -ms-linear-gradient(90deg, #166eac 0%, #2c9dec 100%);
       background: linear-gradient(0deg, #166eac 0%, #2c9dec 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#166eac', endColorstr='#2c9dec');
     }
   }
 }
-
 //remove the blue glow
 a, button, .btn, .container, input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="search"], input[type="url"], input[type="date"], textarea, select, .slick-active, .slick-track, .slider, .slick-slide {
   outline: 0 !important;
