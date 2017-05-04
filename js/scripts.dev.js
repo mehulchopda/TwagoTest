@@ -21,8 +21,10 @@
             autoplay: !0,
             dots: !0,
             infinite: !0,
-            speed: 300,
-            arrows: !1
+            arrows: !1,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 2e3
         }), $("input").focus(function() {
             $(this).prev("label").hide();
         }).blur(function() {

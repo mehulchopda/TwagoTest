@@ -5,19 +5,39 @@
     top: 5px;
     left: 5px;
   }
+  .form-control {
+    height: 50px;
+  }
+
+  ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, :-moz-placeholder { /* Chrome/Opera/Safari */
+    font-size: 16px;
+    font-weight: 400
+
+  }
 }
 
 .email, .password {
   width: 188px;
+  @media (max-width: @screen-xs-max) {
+    width: 100%;
+  }
 }
 
 .email {
   float: left;
+  @media (max-width: @screen-xs-max) {
+    float: none;
+  }
 }
 
 .password {
   float: right;
+  @media (max-width: @screen-xs-max) {
+    float: none
+  }
 }
-.form+h2{
+
+.form + h2 {
   clear: both;
+  padding-top: 33px;
 }
