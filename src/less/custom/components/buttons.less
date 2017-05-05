@@ -1,4 +1,4 @@
-.btn{
+.btn {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
@@ -10,22 +10,23 @@
   padding: 5px 10px;
   color: @black-base;
 }
-.btn-primary{
-  font-size: 16px;
-  padding:13px 57px;
+
+.btn-primary {
+  .button-variant(@white-base; @btn-primary-bg; @btn-primary-border);
+  .button-size(13px; 57px; 16px; @line-height-base; 5px);
   border-color: #18669c;
-  color: #ffffff;
   .gradient(90deg, #166eac 0%, #2c9dec 100%);
   background: linear-gradient(0deg, #166eac 0%, #2c9dec 100%);
   @media (max-width: @screen-xs-max) {
     padding: 13px 20px;
   }
 }
-.btn-secondary{
-  font-size: 16px;
-  padding:13px 32px;
-  border-color:  rgba(149, 149, 149, 67);
+
+.btn-secondary {
+  .button-size(13px;32px; 16px; @line-height-base; 5px);
+  border-color: rgba(149, 149, 149, 67);
   .gradient(90deg, #c8c8c8 0%, #f0f0f0 100%);
+  background:#c8c8c8 ;
   background: linear-gradient(0deg, #c8c8c8 0%, #f0f0f0 100%);
   color: @black-base;
   @media (max-width: @screen-xs-max) {
